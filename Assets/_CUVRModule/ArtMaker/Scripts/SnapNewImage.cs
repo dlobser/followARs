@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace CUVR
+namespace Lobser
 {
     public class SnapNewImage : MonoBehaviour, IPointerClickHandler
     {

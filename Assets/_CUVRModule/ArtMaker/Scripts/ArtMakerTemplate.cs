@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CUVR
+namespace Lobser
 {
     public class ArtMakerTemplate : ArtMaker
     {

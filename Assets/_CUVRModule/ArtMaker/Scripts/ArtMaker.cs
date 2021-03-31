@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CUVR
+namespace Lobser
 {
     public class ArtMaker : MonoBehaviour
     {
