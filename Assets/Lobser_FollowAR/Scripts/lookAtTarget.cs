@@ -21,12 +21,12 @@ public class lookAtTarget : MonoBehaviour {
         {
             target = Camera.main.transform.gameObject;
         }
-        print(target);
+        //print(target);
         Vector3 s = scaleOffset;
         Quaternion savedRot = this.transform.rotation;
 		this.transform.LookAt (target.transform.position);
         Quaternion newRot = this.transform.rotation;
-        this.transform.rotation = Quaternion.Slerp(savedRot, newRot, lerpSpeed);
+        this.transform.rotation = Quaternion.Slerp(savedRot, newRot, lerpSpeed*Time.deltaTime);
         Vector3 eulers = new Vector3(0, this.transform.localEulerAngles.y, 0);
         this.transform.localEulerAngles = eulers;
 //		float d = Mathf.Min(maxScale, Vector3.Distance (this.transform.position, target.transform.position));

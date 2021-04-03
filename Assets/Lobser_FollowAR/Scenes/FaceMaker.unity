@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2879a96637a264d8f903493c4902adc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rebuild: 1
-  amount: 50
+  rebuild: 0
+  amount: 20
   followAR: {fileID: 7246011819773538871, guid: 60d800715c2a84fa78ff6209d5b88448,
     type: 3}
 --- !u!4 &1163963394
@@ -179,6 +179,8 @@ GameObject:
   - component: {fileID: 1504267084}
   - component: {fileID: 1504267086}
   - component: {fileID: 1504267085}
+  - component: {fileID: 1504267088}
+  - component: {fileID: 1504267087}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -251,6 +253,39 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1504267087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504267083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 890e607b3f2864d60bfc00829e6ef0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useButton: 1
+  useAxis: 0
+  buttonName: Fire1
+  click: 0
+--- !u!114 &1504267088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504267083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb98906f9ab54026b785de0510d7477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 
+  useMouse: 1
+  alwaysActive: 0
+  button: {fileID: 1504267087}
+  layers: []
 --- !u!1 &1753258288
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +310,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753258288}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed417f3e600b942cdbbf669e57962673, type: 3}
   m_Name: 
@@ -465,6 +500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FollowAR_Placer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246011819773538871, guid: 60d800715c2a84fa78ff6209d5b88448,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60d800715c2a84fa78ff6209d5b88448, type: 3}

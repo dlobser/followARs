@@ -243,7 +243,7 @@ namespace Lobser
             }
 
             Destroy(root.gameObject);
-
+            repo.GetComponent<RepositionDistance>().container = this.transform.parent.parent.gameObject;
             repo.GetComponent<RepositionDistance>().Add(this.transform.parent.gameObject,this.transform.parent.localPosition);
 
 
